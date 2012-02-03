@@ -26,7 +26,7 @@ exports.file_exists = file_exists;
 exports.read_file = read_file;
 exports.tab = tab;
 
-exports.license = read_file('license.txt');
+exports.license = read_file(__dirname + '/license.txt');
 
 function build(_params) {
 
@@ -106,7 +106,7 @@ function build(_params) {
       }
     }
   }
-  
+
 
   to_write += params.shortcut + ' = ' + params.main.replace(/\//g, '.') + ' = ' + defined[params.main].getClosure() + ';';
 
