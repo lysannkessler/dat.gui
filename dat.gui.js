@@ -2390,6 +2390,7 @@ dat.GUI = dat.gui.GUI = (function (css, saveDialogueContents, styleSheet, contro
 
       name: function(v) {
         controller.__li.firstElementChild.firstElementChild.innerHTML = v;
+        controller.__li.title = v;
         return controller;
       },
 
