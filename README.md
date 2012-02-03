@@ -48,13 +48,13 @@ To create a namespaced, unminified build of dat.GUI at `build/dat.gui.js`, open 
 
 ```
 $ cd build
-$ node build_gui.js
+$ node ../utils/build_gui.js
 ```
 
-To create a namespaced, _minified_ build of dat.GUI at `dat.gui.min.js`, use the `min` parameter:
+To create a namespaced, _minified_ build of dat.GUI at `build/dat.gui.min.js`, use the `min` parameter:
 
 ```
-$ node build_gui.js min
+$ node ../utils/build_gui.js min
 ```
 
 ## Change log
