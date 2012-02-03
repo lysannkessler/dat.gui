@@ -898,6 +898,7 @@ define([
 
       name: function(v) {
         controller.__li.firstElementChild.firstElementChild.innerHTML = v;
+        controller.__li.title = v;
         return controller;
       },
 
