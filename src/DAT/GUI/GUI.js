@@ -826,6 +826,7 @@ define([
 
     dom.addClass(li, GUI.CLASS_CONTROLLER_ROW);
     dom.addClass(li, typeof controller.getValue());
+    li.title = controller.property;
 
     augmentController(gui, li, controller);
 
