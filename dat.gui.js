@@ -2318,6 +2318,7 @@ dat.GUI = dat.gui.GUI = (function (css, saveDialogueContents, styleSheet, contro
 
     dom.addClass(li, GUI.CLASS_CONTROLLER_ROW);
     dom.addClass(li, typeof controller.getValue());
+    li.title = controller.property;
 
     augmentController(gui, li, controller);
 
